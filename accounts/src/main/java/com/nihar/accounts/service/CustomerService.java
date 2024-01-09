@@ -4,5 +4,6 @@ import com.nihar.accounts.dto.CustomerDto;
 
 
 public interface CustomerService {
-	CustomerDto getCustomerDetailsByMobileNumber(String mobileNumber);
+
+    CustomerDto getCustomerDetailsByMobileNumber(String mobileNumber);
 }

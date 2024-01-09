@@ -1,6 +1,13 @@
 package com.nihar.accounts.mapper;
 
+import org.mapstruct.MappingTarget;
+
 public interface BaseMapper<E, D> {
-	D toDto(E entity);
-	E toEntity(D dto);
+  D toDto(E entity);
+
+  E toEntity(D dto);
+
+  void updateDto(E entity, @MappingTarget D dto);
+
+  void updateEntity(D dto, @MappingTarget E Entity);
 }
