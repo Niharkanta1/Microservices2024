@@ -12,6 +12,7 @@
 	<groupId>com.nihar</groupId>
 	<artifactId>accounts</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>accounts</name>
 	<description>Microservice for Accounts</description>
 	<properties>
@@ -92,6 +93,11 @@
 							<artifactId>mapstruct-processor</artifactId>
 							<version>1.5.5.Final</version>
 						</path>
+						<path>
+					        <groupId>org.projectlombok</groupId>     
+					        <artifactId>lombok</artifactId>
+					        <version>1.18.30</version>
+      					</path>
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
